@@ -1,12 +1,28 @@
 {
   "name": "koa-mkcert",
   "version": "0.0.5",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
+  "description": "Provide certificates for Koa's https dev service.",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "npx unbuild"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "keywords": ["koa", "mkcert", "https"],
+  "files": [
+    "dist/**/*"
+  ],
+  "author": {
+    "name": "Allen Wong",
+    "email": "xiaofuyesnew@qq.com",
+    "url": "https://xiaofuyesnew.github.io"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "unbuild": "^2.0.0"
+  }
 }
